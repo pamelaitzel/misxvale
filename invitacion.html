@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XV Años Emmanuel Alejandro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="pantalla-bienvenida" id="pantallaBienvenida">
+  <div class="contenido-bienvenida">
+    <h1>Bienvenidos</h1>
+    <h2>A los XV Años de Emmanuel Alejandro</h2>
+    <p>
+      Estás invitado a formar parte de una celebración muy especial.
+    </p>
+    <button class="btn-entrar" onclick="entrarInvitacion()">Entrar</button>
+  </div>
+</div>
+
+<div class="destellos">
+  <div class="destello"></div>
+  <div class="destello"></div>
+  <div class="destello"></div>
+  <div class="destello"></div>
+  <div class="destello"></div>
+  <div class="destello"></div>
+  <div class="destello"></div>
+</div>
+
+<audio id="musica" autoplay loop>
+  <source src="mañanitas.mp3" type="audio/mpeg">
+  Tu navegador no soporta audio.
+</audio>
+
+<header>
+
+<div class="hero">
+
+<h1>Mis XV Años</h1>
+
+<h2>Emmanuel Alejandro</h2>
+
+<p>
+Hay momentos únicos que merecen celebrarse de una manera inolvidable.
+Quiero compartir contigo este día tan especial y que formes parte de este hermoso recuerdo.
+</p>
+
+<div class="botones">
+
+<a href="#detalles" class="btn-principal">Ver invitación</a>
+
+<a href="#ubicacion" class="btn-secundario">Ver ubicación</a>
+
+
+
+</div>
+
+<div class="reproductor">
+  <button onclick="toggleMusica()">Pausar / Reproducir música</button>
+</div>
+
+<div id="mensaje"></div>
+
+</div>
+
+</header>
+
+<section id="detalles">
+<div class="contenedor">
+
+<h2 class="titulo-seccion">Detalles del evento</h2>
+<div class="separador"></div>
+
+<div class="tarjetas">
+<div class="tarjeta">
+<h3>Fecha</h3>
+<p>28 de junio</p>
+</div>
+
+<div class="tarjeta">
+<h3>Hora</h3>
+<p>2:00 PM</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="contador">
+<div class="contenedor">
+
+<h2 class="titulo-seccion">Faltan</h2>
+<div class="separador"></div>
+
+<div class="tarjeta" style="grid-column:1/-1;">
+<h3>Cuenta regresiva</h3>
+
+<div class="cuenta-regresiva">
+  <div class="tiempo">
+    <span id="dias">0</span>
+    <small>Días</small>
+  </div>
+
+  <div class="tiempo">
+    <span id="horas">0</span>
+    <small>Horas</small>
+  </div>
+
+  <div class="tiempo">
+    <span id="minutos">0</span>
+    <small>Minutos</small>
+  </div>
+
+  <div class="tiempo">
+    <span id="segundos">0</span>
+    <small>Segundos</small>
+  </div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="galeria">
+<div class="contenedor">
+
+<h2 class="titulo-seccion">Galería</h2>
+<div class="separador"></div>
+
+<p class="subtexto-seccion">
+Algunos momentos especiales para recordar y compartir esta gran celebración.
+</p>
+
+<div class="galeria">
+  <img src="foto1.jpeg" alt="Foto 1">
+  <img src="foto2.jpeg" alt="Foto 2">
+  <img src="foto3.jpeg" alt="Foto 3">
+</div>
+
+</div>
+</section>
+
+<section id="ubicacion">
+<div class="contenedor">
+
+<h2 class="titulo-seccion">Ubicación</h2>
+<div class="separador"></div>
+
+<div class="tarjetas">
+<div class="tarjeta" style="grid-column:1/-1;">
+
+<h3>Dirección del evento</h3>
+<p>C. las Pilas 83, Villa del Carbón, Estado de México, en la bodega </p>
+
+<br>
+
+<iframe
+src="https://www.google.com/maps?q=19.7317277,-99.4604357&z=17&output=embed"
+width="100%"
+height="350"
+style="border:0;border-radius:15px;"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+
+<br><br>
+
+<a href="https://www.google.com/maps/place/C.+las+Pilas+83,+Villa+del+Carbon,+54314+Villa+del+Carbón,+Méx./@19.7317327,-99.4630106,17z/"
+target="_blank"
+class="btn-principal">
+Abrir en Google Maps
+</a>
+
+</div>
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="contenedor">
+<p class="frase-final">
+Tu presencia hará que este día sea aún más especial.
+Gracias por ser parte de este momento tan importante en mi vida.
+</p>
+</div>
+</section>
+
+<p class="agradecimiento">
+Con cariño, Emmanuel Alejandro
+</p>
+<script src="function.js"></script>
+</body>
+</html>
